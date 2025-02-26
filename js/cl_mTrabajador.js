@@ -1,5 +1,5 @@
-export default class cl_Trabajador {
-    constructor(nom, horReg, horExt) {
+export default class cl_mTrabajador {
+    constructor({nom, horReg, horExt}) {
         this._nom = nom;
         this._horReg = horReg;
         this._horExt = horExt;

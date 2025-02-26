@@ -1,4 +1,4 @@
-export default class cl_Empresa {
+export default class cl_mEmpresa {
     constructor(){
         this.acumGTotal = 0;
         this.GananciaT = 0;

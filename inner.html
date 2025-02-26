@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="salida"></div>
-    <script src="js/principal.js" type="module"></script>
+    <section id="trabajadorForm">
+        <h3>Registro de trabajadores</h3>
+        <input id="trabajadorForm_inNom" type="text" placeholder="Nombre del trabajador"><br>
+        <input id="trabajadorForm_inHorReg" type="text" placeholder="Horas trabajadas en tiempo regular"><br>
+        <input id="trabajadorForm_inHorExt" type="text" placeholder="Horas trabajadas en tiempo extra"><br>
+        <button id="trabajadorForm_btProcesar">Procesar</button>
+    </section>
+    <section id="mainForm">
+        <h3>Reporte de la empresa</h3>
+        <p><span id="mainForm_lblTrabajador"></span></p>
+        <p>Monto total de nómina pagada:<span id="mainForm_lblNominaTotal"></span>$</p>
+    </section>
 </body>
+    <script type="module">
+        import cl_principal from "./js/principal.js";
+        new cl_principal();
+    </script>
 </html>
